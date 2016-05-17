@@ -1,0 +1,261 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This file was adapted from the following original:
+%
+% Wilson Resume/CV
+% XeLaTeX Template
+% Version 1.0 (22/1/2015)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Howard Wilson (https://github.com/watsonbox/cv_template_2004) with
+% extensive modifications by Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Default font size
+
+\input{structure.tex} % Include the file specifying document layout
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{Andrew Gelnar} % Print the main header
+
+%------------------------------------------------
+
+\parbox{0.5\textwidth}{ % First block
+\begin{tabbing} % Enables tabbing
+\hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Location} \> Kensington, Greater London, \\ % Address line 2
+\> W14 8HW \\ % postcode
+\end{tabbing}}
+\hfill % Horizontal space between the two blocks
+\parbox{0.5\textwidth}{ % Second block
+\begin{tabbing} % Enables tabbing
+\hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Phone} \> (+44) 7947 973 974 \\ % Mobile phone
+{\bf Email} \> andrewgelnar@gmail.com \\ % Email address
+\end{tabbing}}
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL PROFILE
+%----------------------------------------------------------------------------------------
+
+% TODO fill this in
+% \section{Personal Statement}
+
+
+
+%----------------------------------------------------------------------------------------
+%	IT/COMPUTING SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\vspace{-1cm}
+\section{Technologies}
+
+\skills{
+
+  \skillgroup{Advanced}
+  {
+    Python,
+    Bash,
+    SQL,
+    Oracle,
+    Oracle PL/SQL,
+    SQLite,
+    Git
+  }
+
+  \skillgroup{Proficient}
+  {
+    Linux Environment (application support),
+    RabbitMQ,
+    Redis,
+    \\ &
+    memcache,
+    Tornado (python)
+  }
+
+  \skillgroup{Intermediate}
+  {
+    Docker,
+    Phabricator/Arcanist,
+    Jsonschema,
+    Linux (administration),
+    \\ &
+    Carbon (Statistics),
+    python nose,
+    Grafana
+  }
+
+  \skillgroup{Basic}
+  {
+    Kubernetes,
+    Jenkins,
+    docker-compose,
+    CSS,
+    HTML,
+    \\ &
+    JavaScript,
+    JQuery,
+    Java,
+    PHP,
+    C,
+    Apache,
+    \LaTeX
+  }
+}
+%----------------------------------------------------------------------------------------
+%	EMPLOYMENT HISTORY SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Employment History}
+
+\jobheader
+{Jun 2012 -}{May 2016}
+{Geneity Ltd. (part of Playtech Sports)}
+{Software Developer}
+\vspace{-1cm}
+  \begin{itemize}
+
+  \item Maintained existing XML APIs based on relational data (Oracle \& SQLite).
+        Developed new pre-caching mechanism converting relational data into JSON documents
+        using a key/value store (Redis).
+
+  \item Worked extensively on internal libraries for loading data from relational databases
+        (Oracle, SQLite) for use by CMS systems.
+
+  \item Specified, designed and implemented full services to work within
+        pre-existing systems, as well as designing and implementing new distributed systems.
+
+  \item Involved in discussions about altering development work flows, specifically regarding
+        SCM protocol (Git) for ease of development/test/release cycles.
+
+  \item Spent some time working in the Dev Ops team, managing live environments, creation
+        of releases, and deployment to test/stage and live.
+
+  \item Extensive experience with 1$^{\textrm{st}}$ and 2$^{\textrm{nd}}$ line application
+        support, both in-hours and out of hours. Managed diagnosing, fixing and patching
+        issues on/to live environments.
+
+  \item Involved in recruitment process, including conducting technical interviews.
+        Training/Mentoring new starters, and managing/reviewing work.
+
+  \item Joint management of a small development team.
+
+  \item Daily communication with external integration teams from commercial customers, as well as
+        a large amount of contact with non-technical staff in a support capacity.
+
+
+  \end{itemize}
+
+  \textbf{Technologies used:}
+  Python, Tornado (python),
+  Oracle, SQLite,
+  Memcache, Redis,
+  RabbitMQ,
+  Bash,
+  Jira, Git, Jenkins,
+  Kubernetes, Docker, docker-compose,
+  HTML, CSS, JavaScript, JQuery,
+  XML APIs, JSON APIs,
+  python nose
+
+
+%----------------------------------------------------------------------------------------
+%	Next page
+\clearpage
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\tabbedblock{
+\bf{2009-2012} \> BSc (Hons) in Computer Science 2:1 - The University of Manchester \\[5pt]
+\>\+
+\begin{minipage}{\smallertextwidth}
+  Studied
+  computer architecture,
+  distributed systems,
+  algorithms,
+  logic and modelling,
+  OOD,
+  Java,
+  C,
+  SoC,
+  ARM programming,
+  HDL/Verilog,
+  Microcontrollers,
+  Relational Databases,
+  Artificial Intelligence,
+  Compilers,
+  \\
+  Part of peer mentoring program PASS (Peer Assisted Study Sessions) and involved in
+  organisation of mentoring programs as a PASS Coordinator.
+\end{minipage}
+}
+
+%------------------------------------------------
+
+\tabbedblock{
+\bf{2007-2009} \> Varndean College, Brighton\\[5pt]
+\>\+
+ A Levels: Maths A, Computing B, physics B, Chemistry C
+\\
+ AS Levels: Philosophy D
+}
+
+%------------------------------------------------
+
+\tabbedblock{
+\bf{2002-2007} \> Downlands Community School\\[5pt]
+\>\+
+ GCSE:
+   Maths: A*,
+   Statistics: A*,
+   English (Lang): A,
+   English (lit): B,
+   Science (double award): AA,
+\\
+   Music: A,
+   German: A,
+   IT: A,
+   Religious Studies: C.
+}
+
+\section{Miscellaneous}
+
+\mytabbedblock{Awards}{
+  Quarterly performance award, Geneity Ltd. Jun 2014;
+  Excellence in customer service, Iceland Foods Ltd. 2011;
+  BTEC in aviation studies.
+}
+
+\mytabbedblock{Interests}{
+  Gaming, both computer and table-top;
+  Eclectic music taste;
+  Science fiction, especially the works of Issac Asimov and Iain M Banks.
+}
+
+\mytabbedblock{References}{Available on request}
+
+
+\end{document}
+
