@@ -40,8 +40,8 @@
 \parbox{0.5\textwidth}{ % First block
 \begin{tabbing} % Enables tabbing
 \hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
-{\bf Location} \> Kensington, Greater London, \\ % Address line 2
-\> W14 8HW \\ % postcode
+{\bf Location} \> Shepherd's Bush, Greater London, \\ % Address line 2
+\> W12 8DS \\ % postcode
 \end{tabbing}}
 \hfill % Horizontal space between the two blocks
 \parbox{0.5\textwidth}{ % Second block
@@ -73,9 +73,6 @@
     Python,
     Bash,
     SQL,
-    Oracle,
-    Oracle PL/SQL,
-    SQLite,
     Git
   }
 
@@ -84,9 +81,19 @@
     Linux Environment (application support),
     RabbitMQ,
     Redis,
-    \\ &
     memcache,
-    Tornado (python)
+    \\ &
+    Tornado (python),
+    Flask (python),
+    SQLAlchemy (python),
+    \\ &
+    Oracle,
+    Oracle PL/SQL,
+    SQLite,
+    Postgres,
+    AWS,
+    \\ &
+    NGINX
   }
 
   \skillgroup{Intermediate}
@@ -96,25 +103,21 @@
     Jsonschema,
     Linux (administration),
     \\ &
-    Carbon (Statistics),
-    python nose,
-    Grafana
+    nose/nose2 (python)
   }
 
   \skillgroup{Basic}
   {
-    Kubernetes,
-    Jenkins,
-    docker-compose,
     CSS,
     HTML,
-    \\ &
     JavaScript,
     JQuery,
     Java,
     PHP,
     C,
     Apache,
+    Golang,
+    MongoDB,
     \LaTeX
   }
 }
@@ -124,6 +127,43 @@
 
 \section{Employment History}
 
+
+\jobheader
+{May 2016 -}{Present}
+{Condé Nast Britain}
+{Software Engineer}
+\vspace{-1cm}
+  \begin{itemize}
+
+  \item Mainly responsible for creating and maintaining backend application infrastructure,
+        and back office applications (CMS/APIs/Database).
+
+  \item Managed final migration of main infrastructure to AWS' Container Service (ECS).
+
+  \item Handled day to day operation of all environments (staging/production) and changes
+        to server/infrastructure configuration, also serving as both DevOps and application support.
+
+  \item Wrote new read-only JSON API to decrease front-end load times and reduce server
+        load, by creating optimised searching and data loading queries in raw Postgres SQL.
+
+  \item Worked with the Product and front end teams to design extensible data models for modelling
+        editorial content.
+
+  \item Jointly wrote and open sourced a new BB Code parser and renderer to improve
+        the extensibility of our bespoke BB Code format.
+
+  \item Instigated new SCM (Git) protocols to ease merging work between growing numbers of developers
+
+  \end{itemize}
+
+  \textbf{Technologies used:}
+  Python (Flask, Werkzeug, Jinja2, pystache, nose/nose2, SQLAlchemy, Psycopg2)
+  Postgres, Redis, RabbitMQ, Docker, AWS,
+  Bash,
+  Git, Github,
+  HTML, CSS, JavaScript, Bootstrap, JQuery
+
+
 \jobheader
 {Jun 2012 -}{May 2016}
 {Geneity Ltd. (part of Playtech Sports)}
@@ -131,27 +171,25 @@
 \vspace{-1cm}
   \begin{itemize}
 
-  \item Maintained existing XML APIs based on relational data (Oracle \& SQLite).
-        Developed new pre-caching mechanism converting relational data into JSON documents
-        using a key/value store (Redis).
+  \item Maintained existing XML APIs, and developed new pre-caching JSON APIs using Redis.
 
-  \item Worked extensively on internal libraries for loading data from relational databases
-        (Oracle, SQLite) for use by CMS systems.
+  \item Worked extensively on internal libraries for loading relational data (Oracle, SQLite)
+        for use by CMS systems and XML \& JSON APIs.
 
-  \item Specified, designed and implemented full services to work within
-        pre-existing systems, as well as designing and implementing new distributed systems.
+  \item Specified, designed and implemented full services to work within preexisting architectures,
+        as well as designing and implementing new distributed architectures.
 
   \item Involved in discussions about altering development work flows, specifically regarding
         SCM protocol (Git) for ease of development/test/release cycles.
 
-  \item Spent some time working in the Dev Ops team, managing live environments, creation
+  \item Spent time working in the Dev Ops team, managing live environments, creation
         of releases, and deployment to test/stage and live.
 
   \item Extensive experience with 1$^{\textrm{st}}$ and 2$^{\textrm{nd}}$ line application
         support, both in-hours and out of hours. Managed diagnosing, fixing and patching
-        issues on/to live environments.
+        issues on live environments handling thousands of transactions a minute.
 
-  \item Involved in recruitment process, including conducting technical interviews.
+  \item Involved in recruitment process, including conducting technical interviews,
         Training/Mentoring new starters, and managing/reviewing work.
 
   \item Joint management of a small development team.
@@ -177,7 +215,7 @@
 
 %----------------------------------------------------------------------------------------
 %	Next page
-\clearpage
+%%\clearpage
 %----------------------------------------------------------------------------------------
 
 
@@ -250,8 +288,8 @@
 
 \mytabbedblock{Interests}{
   Gaming, both computer and table-top;
-  Eclectic music taste;
   Science fiction, especially the works of Issac Asimov and Iain M Banks.
+  Eclectic music taste;
 }
 
 \mytabbedblock{References}{Available on request}
