@@ -38,27 +38,20 @@
 %------------------------------------------------
 
 \parbox{0.5\textwidth}{ % First block
-\begin{tabbing} % Enables tabbing
-\hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
-{\bf Location} \> Shepherd's Bush, Greater London, \\ % Address line 2
-\> W12 8DS \\ % postcode
-\end{tabbing}}
+  \begin{tabbing} % Enables tabbing
+    \hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+    {\bf Location} \> Shepherd's Bush, Greater London, \\ % Address line 2
+    \> W12 \\ % postcode
+  \end{tabbing}
+}
 \hfill % Horizontal space between the two blocks
 \parbox{0.5\textwidth}{ % Second block
-\begin{tabbing} % Enables tabbing
-\hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
-{\bf Phone} \> (+44) 7947 973 974 \\ % Mobile phone
-{\bf Email} \> andrewgelnar@gmail.com \\ % Email address
-\end{tabbing}}
-
-%----------------------------------------------------------------------------------------
-%	PERSONAL PROFILE
-%----------------------------------------------------------------------------------------
-
-% TODO fill this in
-% \section{Personal Statement}
-
-
+  \begin{tabbing} % Enables tabbing
+    \hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+    {\bf Phone} \> (+44) 7947 973 974 \\ % Mobile phone
+    {\bf Email} \> apgelnar@gmail.com \\ % Email address
+  \end{tabbing}
+}
 
 %----------------------------------------------------------------------------------------
 %	IT/COMPUTING SKILLS SECTION
@@ -73,37 +66,29 @@
     Python,
     Bash,
     SQL,
-    Git
+    Git,
+    NGINX,
   }
 
   \skillgroup{Proficient}
   {
-    Linux Environment (application support),
-    RabbitMQ,
-    Redis,
-    memcache,
-    \\ &
-    Tornado (python),
-    Flask (python),
-    SQLAlchemy (python),
-    \\ &
-    Oracle,
-    Oracle PL/SQL,
-    SQLite,
-    Postgres,
+    Docker,
+    SQL,
+    Linux (application support),
+    Golang,
     AWS,
-    \\ &
-    NGINX
+    Terraform,
   }
 
   \skillgroup{Intermediate}
   {
-    Docker,
-    Phabricator/Arcanist,
+    Apache Kafka,
+    Redis,
+    Oracle,
+    SQLite,
+    Postgres,
     Jsonschema,
-    Linux (administration),
-    \\ &
-    nose/nose2 (python)
+    GCP,
   }
 
   \skillgroup{Basic}
@@ -111,13 +96,8 @@
     CSS,
     HTML,
     JavaScript,
-    JQuery,
     Java,
-    PHP,
     C,
-    Apache,
-    Golang,
-    MongoDB,
     \LaTeX
   }
 }
@@ -127,41 +107,73 @@
 
 \section{Employment History}
 
+\jobheader
+{May 2018 -}{Present}
+{Red Ventures}
+{Senior Engineer}
+\vspace{-1cm}
+  \begin{itemize}
+
+  \item Joined to help build and run cloud infrastructure team, working
+        with several teams in the US to bring RV's tech stack to the EU. Authored
+        and maintained reusable Terraform configuration to support migrating of
+        suites of microservices in AWS cloud.
+
+  \item Worked closely with the Security and Compliance departments both here and
+        in the US as well as engineering teams to ensure that the applications and
+        systems being brought over adhered to local UK and EU legislation
+        (GDPR, PECR, e-privacy, etc).
+
+  \item Created initial infrastructure for Bankrate UK's initial Launch, and worked
+        to migrate it from a statically generated site in AWS S3 to an application hosted
+        in GCP's Kubernetes engine GKE.
+
+  \item After a structural change in the business I moved to work with the Data
+        Services team of our new operating partner
+        (ZPG Comparsion - uSwitch \& money.co.uk)
+        to create a new secure real-time eventing pipeline using Apache Kafka
+        and AWS' DynamoDB, written in golang.
+
+  \end{itemize}
+
+  \textbf{Main Technologies used:}
+  Terraform, AWS, GCP, golang, Kubernetes, Apache Kafka
 
 \jobheader
-{May 2016 -}{Present}
+{May 2016 -}{May 2018}
 {Condé Nast Britain}
 {Software Engineer}
 \vspace{-1cm}
   \begin{itemize}
 
-  \item Mainly responsible for creating and maintaining backend application infrastructure,
-        and back office applications (CMS/APIs/Database).
+  \item I was responsible for backend application and cloud infrastructure development
+        alongside the CTO. I took over migration to a containerised setup using AWS' Container Service (ECS), as well as ongoing maintenance and improvement.
 
-  \item Managed final migration of main infrastructure to AWS' Container Service (ECS).
+  \item Created new read-only content API to decrease front-end load times and
+        reduce server load, by moving away from SQLAlchemy's ORM and writing
+        optimised queries for complicated search criteria. Also created and fixed
+        caching site-wide using Redis to solve periodic site outages related to
+        releases and cache space changes.
 
-  \item Handled day to day operation of all environments (staging/production) and changes
-        to server/infrastructure configuration, also serving as both DevOps and application support.
+  \item Worked with the Product and front end teams to design extensible data models
+        for modelling editorial content, and basic design of back-office CMS
+        interfaces.
 
-  \item Wrote new read-only JSON API to decrease front-end load times and reduce server
-        load, by creating optimised searching and data loading queries in raw Postgres SQL.
-
-  \item Worked with the Product and front end teams to design extensible data models for modelling
-        editorial content.
-
-  \item Jointly wrote and open sourced a new BB Code parser and renderer to improve
-        the extensibility of our bespoke BB Code format.
-
-  \item Instigated new SCM (Git) protocols to ease merging work between growing numbers of developers
+  \item Instigated new Git workflows and release processes to scale with growing
+        numbers of engineers. Worked on extending our in-house build and deploy
+        tool \textit{Brickyard} in support of these processes.
 
   \end{itemize}
 
-  \textbf{Technologies used:}
-  Python (Flask, Werkzeug, Jinja2, pystache, nose/nose2, SQLAlchemy, Psycopg2)
+  \textbf{Main Technologies used:}
+  Python (Flask),
   Postgres, Redis, RabbitMQ, Docker, AWS,
-  Bash,
-  Git, Github,
-  HTML, CSS, JavaScript, Bootstrap, JQuery
+
+
+%----------------------------------------------------------------------------------------
+%	Next page
+\clearpage
+%----------------------------------------------------------------------------------------
 
 
 \jobheader
@@ -171,32 +183,25 @@
 \vspace{-1cm}
   \begin{itemize}
 
-  \item Maintained existing XML APIs, and developed new pre-caching JSON APIs using Redis.
+  \item Initially worked on the API team, creating and managing read-only content
+        and read/write Transactional XML APIs reading from our central Oracle database.
+        APIs supporting internal and external customers with thousands of transactions
+        a minute.
 
-  \item Worked extensively on internal libraries for loading relational data (Oracle, SQLite)
-        for use by CMS systems and XML \& JSON APIs.
-
-  \item Specified, designed and implemented full services to work within preexisting architectures,
-        as well as designing and implementing new distributed architectures.
-
-  \item Involved in discussions about altering development work flows, specifically regarding
-        SCM protocol (Git) for ease of development/test/release cycles.
-
-  \item Spent time working in the Dev Ops team, managing live environments, creation
-        of releases, and deployment to test/stage and live.
+  \item Moved onto the DevOps and Support team. Managed live environments across
+        several datacenters managing our applications on provisioned Linux servers.
+        Built and deployed large scale monthly releases involving merging hundreds
+        of git commits and resolving large scale conflicts from half a dozen teams,
+        as well as compiling and testing Database migration scripts.
 
   \item Extensive experience with 1$^{\textrm{st}}$ and 2$^{\textrm{nd}}$ line application
-        support, both in-hours and out of hours. Managed diagnosing, fixing and patching
-        issues on live environments handling thousands of transactions a minute.
+        support both in and out of hours. Also spent a large amount of time working
+        with both technical and non technical customers to fix their issues and
+        work on extending features of the product(s).
 
   \item Involved in recruitment process, including conducting technical interviews,
-        Training/Mentoring new starters, and managing/reviewing work.
-
-  \item Joint management of a small development team.
-
-  \item Daily communication with external integration teams from commercial customers, as well as
-        a large amount of contact with non-technical staff in a support capacity.
-
+        Training/Mentoring new starters, and managing/reviewing work. In my final
+        months at the company I jointly managed a small development team.
 
   \end{itemize}
 
@@ -211,12 +216,6 @@
   HTML, CSS, JavaScript, JQuery,
   XML APIs, JSON APIs,
   python nose
-
-
-%----------------------------------------------------------------------------------------
-%	Next page
-%%\clearpage
-%----------------------------------------------------------------------------------------
 
 
 %----------------------------------------------------------------------------------------
@@ -296,4 +295,3 @@
 
 
 \end{document}
-
