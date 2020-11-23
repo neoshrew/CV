@@ -68,13 +68,10 @@ SmallCapsFeatures = {Letters = SmallCaps}
 %	MAIN HEADER COMMAND
 %----------------------------------------------------------------------------------------
 
-%\renewcommand{\title}[1]{
-%{\huge{\color{slateblue}\textbf{#1}}}\\ % Header section name and color
-%\rule{\textwidth}{0.5mm}\\ % Rule under the header
-%}
-\renewcommand{\title}[1]{
-{\huge{\textbf{#1}}}\\ % Header section name and color
-\rule{\textwidth}{0.5mm}\\ % Rule under the header
+\renewcommand{\title}[2]{
+  {\huge{\textbf{#1}}} % Header section name and color
+  \hfill#2\\
+  \rule{\textwidth}{0.5mm}\\ % Rule under the header
 }
 
 %----------------------------------------------------------------------------------------
