@@ -18,17 +18,17 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
+\usepackage{parskip}
+\usepackage{pbox}
+\usepackage{makecell}
 \usepackage{hyperref}
-
 \usepackage[a4paper, hmargin=25mm, vmargin=30mm, top=20mm]{geometry} % Use A4 paper and set margins
-
 \usepackage{fancyhdr} % Customize the header and footer
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fontspec} % Required for specification of custom fonts
 
 \setcounter{secnumdepth}{0} % Suppress section numbering
 
-\usepackage[T1]{fontenc} % Output font encoding for international characters
-
-\usepackage{fontspec} % Required for specification of custom fonts
 \setmainfont[Path = ./fonts/,
 Extension = .otf,
 BoldFont = Erewhon-Bold,
@@ -62,11 +62,7 @@ SmallCapsFeatures = {Letters = SmallCaps}
 \usepackage{enumitem}
 \newcommand{\sqbullet}{~\vrule height 1ex width .8ex depth -.2ex} % Custom square bullet point definition
 
-
 \usepackage{tabularx}
-%----------------------------------------------------------------------------------------
-%	MAIN HEADER COMMAND
-%----------------------------------------------------------------------------------------
 
 \renewcommand{\title}[2]{
   {\huge{\textbf{#1}}} % Header section name and color
@@ -78,22 +74,14 @@ SmallCapsFeatures = {Letters = SmallCaps}
 %	JOB COMMAND
 %----------------------------------------------------------------------------------------
 
-\newcommand{\job}[5]{
-\begin{tabbing}
-\hspace{2cm} \= \kill
-\textbf{#1} \> {#3} \\
-\textbf{#2} \>\+ \textit{#4} \\
-\begin{minipage}{\smallertextwidth}
-#5
-\end{minipage}
-\end{tabbing}
-}
-\newcommand{\jobheader}[4]{
+\newcommand{\jobheader}[5]{
 \begin{tabbing}
 \hspace{2cm} \= \kill
 \textbf{#1} \> {#3} \\
 \textbf{#2} \>\+ \textit{#4} \\
 \end{tabbing}
+\vspace{-0.5cm}
+\textbf{Main Technologies, tools, or Skills:}{#5}
 }
 
 
@@ -115,26 +103,13 @@ SmallCapsFeatures = {Letters = SmallCaps}
 %	SKILL GROUP COMMAND
 %----------------------------------------------------------------------------------------
 \newcommand{\skills}[1]{
-\begin{center}
-\begin{tabular}{r|l}
-\hline
-#1
-\end{tabular}
-\end{center}
+  \begin{center}
+    \begin{tabular}{r|l}
+      #1
+    \end{tabular}
+  \end{center}
 }
 
 \newcommand{\skillgroup}[2]{
-\textbf{#1} & #2 \\
-\hline
-}
-
-%----------------------------------------------------------------------------------------
-%	TABBED BLOCK COMMAND
-%----------------------------------------------------------------------------------------
-
-\newcommand{\tabbedblock}[1]{
-\begin{tabbing}
-\hspace{2cm} \= \hspace{4cm} \= \kill
-#1
-\end{tabbing}
+  \textbf{#1} & \makecell[l]{#2} \\
 }
