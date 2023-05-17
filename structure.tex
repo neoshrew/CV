@@ -74,14 +74,29 @@ SmallCapsFeatures = {Letters = SmallCaps}
 %	JOB COMMAND
 %----------------------------------------------------------------------------------------
 
-\newcommand{\jobheader}[5]{
-\begin{tabbing}
-\hspace{2cm} \= \kill
-\textbf{#1} \> {#3} \\
-\textbf{#2} \>\+ \textit{#4} \\
-\end{tabbing}
-\vspace{-0.5cm}
-\textbf{Main Technologies, tools, or Skills:}{#5}
+\newcommand{\jobheader}[6]{
+  \begin{tabular}{l|l}
+    \makecell[l]{
+      \textbf{#1}
+      \\
+      to \textbf{#2}
+    }
+    &
+    \makecell[l]{
+      \textbf{#3}
+      \\
+      \textit{#4}
+    }
+  \end{tabular}
+
+
+  \textbf{Technologies and skills}{#5}
+
+
+  {#6}
+
+
+  \vspace {0.75em}
 }
 
 
