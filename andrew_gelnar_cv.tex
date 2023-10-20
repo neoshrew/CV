@@ -37,7 +37,7 @@
 \\
 \rule{\textwidth}{0.5mm}
 \\
-Principal Platform Engineer, London
+Platform Engineering Manager, London
 \hfill
 apgelnar@gmail.com
 
@@ -60,7 +60,7 @@ ensuring compliance with industry best practices.
       {
             AWS, Terraform, Python, Bash, SQL, Git, Databricks, Cloud architecture,
       }
-  
+
       \hline
 
       \skillgroup{Proficient}
@@ -87,45 +87,49 @@ ensuring compliance with industry best practices.
 \jobheader
 {March 2021}{present}
 {MatchesFashion}
-{Senior DevOps Engineer, Principal Platform Engineer}
+{Principal Platform Engineer, Engineering Manager}
 {
       AWS, Databricks, spark, Terraform, GitHub, Apache Kafka, Lucid Chart, Excalidraw,
       Okta, system design, People Management, Project Management
 }
 {
   \begin{itemize}
+      \item Managed the Data Platform team and the Network Infrastructure team, defining
+            the teams' roadmaps and liaising with stakeholders in the greater tech team.
+            This also involved mentoring more junior engineers expanding their skillsets
+            into cloud engineering as well as Engineering Enablement practices.
 
-      \item Joined the Data Platform team and lead the initial design of the new Databricks based
-            Datalake, focusing on resiliency, security, and compliance. Responsible for all aspects
-            of the Data team's cloud infrastructure with extensive setups around networking, IAM
-            and S3 security.
-
-      \item Acted as SME and architect for the Data department designing resilient pipelines
-            using S3/SQS/Lambda for event-driven file ingestion
-            and Apache Kafka/Databricks/Spark for event-sourced ingestion.
-
-      \item Took on management of the data platform team defining the team's roadmap and liaising
-            with stakeholders in the greater tech team. This also involved mentoring the junior
-            engineers expanding their skillsets into cloud engineering as well as Engineering
-            Enablement practices.
-
-      \item Later also took on management of the Network Infrastructure team (responsible for Matches'
-            on-prem infrastructure and AWS-based Windows estate) managing both teams' separate stakeholders
-            across the tech department.
-            Notably this involved recovering a migration project to replace VPC Peering in favour of
-            AWS Transit Gateway, after all previous team members on the project resigned.
-
-      \item As Principal Platform Engineer sat across the entire tech department acting as an
-            SME for AWS and other cloud services, notably advising our security functions for cloud
-            and information security. Filled a partially operational role managing some of Matches'
+      \item Sat across the entire tech department as an SME for AWS and other cloud services,
+            notably advising our security functions for cloud and information security.
+            Filled a partially operational role managing some of Matches'
             suite of cloud products including GCP, Okta, LastPass, and various DNS providers.
+
+      \item Was responsible for all aspects of the Data team's cloud infrastructure and completely
+            redesigned the setup of networking, IAM, and S3 to make security a core part of our use
+            of these services.
+
+      \item Lead the design of the new Databricks based Datalake, focusing on resiliency, security,
+            and compliance. Designed resilient pipelines for event-driven file ingestion (using S3, SQS,
+            and Lambda) and event-sourced ingestion (Apache Kafka, Databricks, and Spark).
+
+      \item Recovered a migration project to replace VPC Peering in favour of AWS Transit Gateway,
+            after all previous team members on the project resigned. Managed the integration of this
+            new inter-VPC network with our corporate SD-WAN network.
+
+      \item Reorganised the Infra team away from being a ticket-based service team to a project lead team,
+            to achieve predictable and consistent delivery on project based work.
+
+      \item Designed and managed the creation of a self-service project for the Data Engineers to speed up
+            initial project creation, whilst ensuring security of CI/CD and Application setups through
+            specific and least-privileged access principles. This reduced the initial setup of Databricks-based
+            projects for the data engineers from up-to two weeks to a day.
 
   \end{itemize}
 }
 \jobheader
 {Jul 2019}{Feb 2021}
 {OakNorth}
-{Senior Engineer, Tech Lead}
+{Head of Infrastructure}
 {
       Terraform,
       AWS,
@@ -142,31 +146,32 @@ ensuring compliance with industry best practices.
 }
 {
   \begin{itemize}
+ % As with the previous section, less sequential reads better in my opinion
+ % Initially joined as an IC and got promoted to managing the infra team soon after.
+ % Poeple find the Oaknorth matrix management confusing so I tend to just skip that part.
+ % Lead the team to solve X, Y and Z problems - Re-build the infrastructure from the ground up,
+ % splitting different customers into their own accounts with focus on security and compliance
+ % Introduced CI/CD within infrastructure and decoupled from the slow and painful release process for the product
+ % Also something about the team having stakeholders across all of engineering and how you handled this
+      \item Initially joined as an IC in the Cloud Infrastructure team, which I subsequently managed.
+            This involved working with stakeholders across all of engineering to establish the team's
+            roadmap taking into account dependent teams' individual roadmaps.
 
-  \item Joined the newly formed Infra team owning Cloud Infrastructure and SRE functions.
-        Worked on all aspects of our cloud infrastructure projects.
-        A large portion of time dedicated to helping other teams with their on-demand infrastructure needs,
-        debugging issues with their applications and helping with design decisions.
+      \item Rebuilt our single tenancy client platform infrastructure to have CI/CD and automated processes
+            for creating and updating client environments, replacing slow and error prone manual processes.
 
-  \item Took over as tech lead in Q1 of 2020. Managed team roadmap, a large component
-        of which was prioritising incoming requirements from several disparate and disconnected
-        sections of the company. Also managed team growth and development, advising on career
-        progression and giving periodic feedback on performance. Heavily involved in
-        the recruitment process for multiple engineering roles, and worked directly with the talent
-        team to hire members of the Infra team.
+      \item Worked closely with Security and Compliance to ensure infrastructure and applications adhered
+            to industry best practices and handled client data appropriately, involving being a key
+            reviewer for designs/changes involving data.
 
-  \item Worked closely with the Security and Compliance teams to ensure
-        the cloud infrastructure and application design/architecture adhered to industry
-        best practices and handled client data appropriately. This involved being a key
-        advisor and reviewer for designs of new features involving data.
+      \item Instigated and managed our access control procedures for the engineering department
+            to fill a shortfall in compliance, and worked with IT to harden our security
+            with better SSO integrations, and utilisation of AzureAD's auto-provisioning
+            with SCIM wherever possible.
 
-  \item Performed on call duties and worked closely with the heads of engineering and product support
-        to refine our incident handling policies.
-
-  \item Instigated and managed our access control procedures for the engineering department
-        to fill a shortfall in compliance, and worked with IT to harden our security
-        with better SSO integrations, and utilisation of AzureAD's auto-provisioning
-        with SCIM wherever possible.
+      \item Performed on call duties and worked closely with the heads of engineering and product support
+            to refine our incident handling policies. Also heavily involved with our incident postmortem
+            process, ensuring we performed useful and productive investigations with actionable outcomes.
 
   \end{itemize}
 }
@@ -174,7 +179,7 @@ ensuring compliance with industry best practices.
 {May 2018}{Jun 2019}
 {Red Ventures}
 {Senior Engineer}
-{ 
+{
       Terraform,
       AWS,
       GCP,
@@ -216,7 +221,7 @@ ensuring compliance with industry best practices.
       Redis,
       RabbitMQ,
       Docker,
-      AWS    
+      AWS
 }
 {
   \begin{itemize}
@@ -251,7 +256,6 @@ ensuring compliance with industry best practices.
       Git,
       Docker, docker-compose,
       HTML, CSS, JavaScript
-    
 }
 {
       \begin{itemize}
@@ -260,7 +264,7 @@ ensuring compliance with industry best practices.
             1$^{\textrm{st}}$-3$^{\textrm{rd}}$ line support for all systems.
 
       \item conducted technical interviews, mentored new starters, and managed of a small
-            development team. 
+            development team.
 
       \end{itemize}
 }
@@ -273,10 +277,8 @@ ensuring compliance with industry best practices.
 
 \textbf{BSc (Hons) in Computer Science 2:1 - The University of Manchester}
 \\
-\textbf{A Levels}: Maths A, Computing B, physics B, Chemistry C
-\\
-\textbf{AS Levels}: Philosophy D
-\\
+\textbf{A Levels}: Maths A, Computing B, physics B, Chemistry C;
+\textbf{AS Levels}: Philosophy D;
 \textbf{GCSE}:
    Maths: A*,
    Statistics: A*,
